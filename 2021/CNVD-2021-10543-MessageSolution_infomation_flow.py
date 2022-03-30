@@ -7,7 +7,7 @@ import os
 import re
 
 def title():
-    print('+          FOFA: icon_hash="-320896955"')
+    print('+          FOFA: title="MessageSolution Enterprise Email Archiving (EEA)"')
     
 def run_proto(url):
     url = url + '/authenticationserverservlet'
