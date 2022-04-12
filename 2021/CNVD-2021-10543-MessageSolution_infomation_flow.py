@@ -19,7 +19,7 @@ def run_proto(url):
     try:
         requests.packages.urllib3.disable_warnings()
         resp = requests.get(url=url, headers=header, verify=False, timeout=(3, 3))
-        reContent = re.search('<username>.*?</username>', resp.text, re.I | re.M)
+        reContent = re.search('username>.*?username>', resp.text, re.I | re.M)
         if reContent and resp.status_code == 200:
             print(reContent)
             return True
