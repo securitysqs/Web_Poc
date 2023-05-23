@@ -28,7 +28,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # getStr = input('请输入fofa查询语句:').encode('utf-8')
-getStr = '''banner="MinIO" || header="MinIO" || title="MinIO Browser"'''.encode('utf-8')
+getStr = '''"yonyou NC"'''.encode('utf-8')
 chstr = str(base64.b64encode(getStr).decode('utf-8'))
 # print(chstr)
 command = 'whoami'
